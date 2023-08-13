@@ -1,10 +1,7 @@
-import '../styles/index.css'
-import React from 'react'
-import App from 'next/app'
 import NProgressHandler from 'components/NProgressHandler'
+import App from 'next/app'
 import Head from 'next/head'
-import { AuthContextProvider } from 'context/auth'
-import { Toaster } from 'components/Toast'
+import '../styles/index.css'
 
 class MyApp extends App {
   render() {
@@ -15,11 +12,8 @@ class MyApp extends App {
         <Head>
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="width=device-width, initial-scale=1" name="viewport" />
-          <title>NextJS boilerplate | Dwarves Foundation</title>
-          <meta
-            property="og:title"
-            content="NextJS boilerplate | Dwarves Foundation"
-          />
+          <title>Acne Huong</title>
+          <meta property="og:title" content="Acne Huong" />
           <meta name="twitter:site" content="@dwarvesf" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
@@ -33,11 +27,8 @@ class MyApp extends App {
           <meta property="og:image" content="/thumbnail.jpeg" />
           <meta name="twitter:image" content="/thumbnail.jpeg" />
         </Head>
-        <AuthContextProvider>
-          <NProgressHandler />
-          <Component {...pageProps} />
-        </AuthContextProvider>
-        <Toaster />
+        <NProgressHandler />
+        <Component {...pageProps} />
       </>
     )
   }
