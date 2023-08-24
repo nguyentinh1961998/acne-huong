@@ -1,9 +1,11 @@
+'use client'
+
 import { Header } from 'components/Header'
 import { WithChildren } from 'types/common'
 
 export const Layout = ({ children }: WithChildren) => {
   return (
-    <div className="flex h-full">
+    <div className="h-full w-full overflow-x-hidden">
       <main className="flex-1">
         <Header />
 
