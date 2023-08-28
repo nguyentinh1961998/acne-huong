@@ -26,10 +26,12 @@ export default function Nagivation({ items }: Props) {
     <NavigationMenu orientation="horizontal">
       <NavigationMenuList className="flex">
         {items.map((item) => (
-          <NavigationMenuItem key={item.key}>
-            <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+          <NavigationMenuItem key={item.key} className="hover:bg-white">
+            <NavigationMenuTrigger className="text-xs tracking-[0.3rem] hover:bg-white">
+              {item.title}
+            </NavigationMenuTrigger>
             <NavigationMenuContent
-              className="absolute flex flex-col gap-4 border border-neutral-200 p-10 min-w-[300px] mt-2"
+              className="absolute flex flex-col gap-4 border border-neutral-200 p-8 min-w-[300px] mt-2 z-[999] bg-white"
               inlist={false}
             >
               {item.navItems.map((i) => (

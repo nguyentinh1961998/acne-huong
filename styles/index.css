@@ -58,3 +58,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: Roboto, sans-serif;
+}
+
+div.events-wrapper ~ ul {
+  display: none !important;
+  background-color: red !important;
+}
+
+.timeline-eventline {
+  background-color: red !important;
+}

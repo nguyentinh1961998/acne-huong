@@ -12,7 +12,7 @@ export default function NavigationItem({ href, label }: Props) {
 
   return (
     <div
-      className="text-lg hover:text-primary flex items-center gap-2"
+      className="text-sm hover:text-primary flex items-center gap-2"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >

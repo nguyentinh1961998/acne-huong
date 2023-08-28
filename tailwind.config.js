@@ -30,6 +30,9 @@ module.exports = {
         light: '#feefec',
         lighter: '#fff8f5',
       },
+      fontFamily: {
+        header: ['old standard tt', '"Open Sans"'],
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
