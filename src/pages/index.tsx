@@ -15,7 +15,6 @@ import Enquiry from '@/components/Dashboard/Enquiry'
 import { InformationItemType } from '@/components/Dashboard/Enquiry/InformationItem'
 import SpaTeam from '@/components/Dashboard/SpaTeam'
 import { EmployeeType } from '@/components/Dashboard/SpaTeam/EmployeeCard'
-import { TimelineItemType } from '@/components/Dashboard/Timeline/TimelineItem'
 
 const SERVICES: ServiceCardItem[] = [
   {
@@ -193,41 +192,40 @@ const SPA_TEAM: EmployeeType[] = [
   },
 ]
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const TIMELINE: TimelineItemType[] = [
-  {
-    date: '2000',
-    id: '1',
-    image: '/images/home-img.jpeg',
-    title: 'Our Second Spa Center Opened in Rotterdam',
-    description:
-      'Our highly trained estheticians hone their expertise with breakthrough techniques and the most advanced and non-invasive technology. We are a sanctuary, providing a peaceful space of wellness, beauty and overall health. Our passionate and nurturing staff will treat you to the best in relaxation.',
-  },
-  {
-    date: '2001',
-    id: '2',
-    image: '/images/home-img-2.jpeg',
-    title: 'We Added New Progressive Services',
-    description:
-      'We welcome each and every guest to the Rela as a member of our Community Center. We provide a welcoming and inclusive space for all humans. Our grounds are open for members to come and relax in, when they need some time away from the hustle and bustle. Meditate, stretch, unwind, whatever.',
-  },
-  {
-    date: '2002',
-    id: '3',
-    image: '/images/home-img-3.jpeg',
-    title: 'Our Third Spa Center Opened in Madrid',
-    description:
-      'Rela Spa combines ancient traditions with the most renowned and up-to-date technologies, in a context where beauty and the charming surrounding environment encourage healthy living, in harmony with the rhythms and cycles of nature.      ',
-  },
-  {
-    date: '2003',
-    id: '4',
-    image: '/images/feature_img_1.jpeg',
-    title: 'New Experience in Medical Sphere',
-    description:
-      'Our highly trained estheticians hone their expertise with breakthrough techniques and the most advanced and non-invasive technology. We are a sanctuary, providing a peaceful space of wellness, beauty and overall health. Our passionate and nurturing staff will treat you to the best in relaxation.',
-  },
-]
+// const TIMELINE: TimelineItemType[] = [
+//   {
+//     date: '2000',
+//     id: '1',
+//     image: '/images/home-img.jpeg',
+//     title: 'Our Second Spa Center Opened in Rotterdam',
+//     description:
+//       'Our highly trained estheticians hone their expertise with breakthrough techniques and the most advanced and non-invasive technology. We are a sanctuary, providing a peaceful space of wellness, beauty and overall health. Our passionate and nurturing staff will treat you to the best in relaxation.',
+//   },
+//   {
+//     date: '2001',
+//     id: '2',
+//     image: '/images/home-img-2.jpeg',
+//     title: 'We Added New Progressive Services',
+//     description:
+//       'We welcome each and every guest to the Rela as a member of our Community Center. We provide a welcoming and inclusive space for all humans. Our grounds are open for members to come and relax in, when they need some time away from the hustle and bustle. Meditate, stretch, unwind, whatever.',
+//   },
+//   {
+//     date: '2002',
+//     id: '3',
+//     image: '/images/home-img-3.jpeg',
+//     title: 'Our Third Spa Center Opened in Madrid',
+//     description:
+//       'Rela Spa combines ancient traditions with the most renowned and up-to-date technologies, in a context where beauty and the charming surrounding environment encourage healthy living, in harmony with the rhythms and cycles of nature.      ',
+//   },
+//   {
+//     date: '2003',
+//     id: '4',
+//     image: '/images/feature_img_1.jpeg',
+//     title: 'New Experience in Medical Sphere',
+//     description:
+//       'Our highly trained estheticians hone their expertise with breakthrough techniques and the most advanced and non-invasive technology. We are a sanctuary, providing a peaceful space of wellness, beauty and overall health. Our passionate and nurturing staff will treat you to the best in relaxation.',
+//   },
+// ]
 
 const DashboardPage = () => {
   return (
