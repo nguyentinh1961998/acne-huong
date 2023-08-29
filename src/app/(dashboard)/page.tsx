@@ -1,20 +1,20 @@
-/* eslint-disable import/extensions */
-import { Layout } from 'components/Layout'
-import Image from 'next/image'
+'use client'
+
 import Carousel from 'components/Dashboard/Carousel'
-import Services from 'components/Dashboard/Services'
-import { ServiceCardItem } from 'components/Dashboard/Services/ServiceCard'
-import Logo from 'components/common/Logo'
-import Spec from 'components/Spec'
-import { SpecCardItem } from 'components/Spec/SpecCard'
+import Enquiry from 'components/Dashboard/Enquiry'
+import { InformationItemType } from 'components/Dashboard/Enquiry/InformationItem'
 import Features from 'components/Dashboard/Features'
 import { FeatureItemType } from 'components/Dashboard/Features/FeatureItem'
 import Locations from 'components/Dashboard/Locations'
 import { LocationItemType } from 'components/Dashboard/Locations/LocationItem'
-import Enquiry from 'components/Dashboard/Enquiry'
-import { InformationItemType } from 'components/Dashboard/Enquiry/InformationItem'
+import Services from 'components/Dashboard/Services'
+import { ServiceCardItem } from 'components/Dashboard/Services/ServiceCard'
 import SpaTeam from 'components/Dashboard/SpaTeam'
 import { EmployeeType } from 'components/Dashboard/SpaTeam/EmployeeCard'
+import Spec from 'components/Spec'
+import { SpecCardItem } from 'components/Spec/SpecCard'
+import Logo from 'components/common/Logo'
+import Image from 'next/image'
 
 const SERVICES: ServiceCardItem[] = [
   {
@@ -229,57 +229,55 @@ const SPA_TEAM: EmployeeType[] = [
 
 export default function Page() {
   return (
-    <Layout>
-      <div className="relative bg-[#fff8f5] min-h-screen h-full flex flex-col">
-        <Carousel />
-        <div className="h-[400px]" />
-        <div className="absolute top-[460px] flex justify-center items-center w-full z-50">
-          <Services items={SERVICES} />
-        </div>
-        <div className="p-4 text-center">
-          <Logo />
-        </div>
-        <div className="p-4 flex-col text-center gap-4 justify-center flex items-center">
-          <span className="text-[32px] font-header">Enjoy The Difference</span>
-          <span className="max-w-[650px] leading-6 text-xs text-neutral-500 font-light">
-            We offer customized bioactive treatments from our friendly and
-            knowledgeable staff. We specialize in Couple’s Treatments,
-            Floatation and all forms of massage as well as cutting edge facial
-            treatments. We aim to make you a better you!
-          </span>
-        </div>
-        <div className="p-4">
-          <Spec items={SPEC} />
-        </div>
-        <div className="p-4">
-          <Features items={FEATURES} />
-        </div>
-        <div className="p-4 text-center">
-          <Logo />
-        </div>
-        <div className="p-4">
-          <Locations items={LOCATIONS} />
-        </div>
-        <div className="py-4 mt-24">{/* <Timeline items={TIMELINE} /> */}</div>
-        <div className="py-4 mt-24">
-          <Enquiry items={INFORMATION} />
-        </div>
-        <div className="p-4 mt-24">
-          <SpaTeam items={SPA_TEAM} />
-        </div>
-        <div className="flex flex-col gap-4 text-center p-4 mt-24">
-          <span className="text-[48px] font-light font-header text-neutral-600">
-            Welcome to Rela.
-            <br />
-            Book Your Stay Today.
-          </span>
-          <span className="my-8 mb-24">
-            <span className="tracking-[0.3rem] text-xs hover:text-primary font-light">
-              BOOK AN APPOINTMENT
-            </span>
-          </span>
-        </div>
+    <div className="relative bg-[#fff8f5] min-h-screen h-full flex flex-col">
+      <Carousel />
+      <div className="h-[400px]" />
+      <div className="absolute top-[460px] flex justify-center items-center w-full z-50">
+        <Services items={SERVICES} />
       </div>
-    </Layout>
+      <div className="p-4 text-center">
+        <Logo />
+      </div>
+      <div className="p-4 flex-col text-center gap-4 justify-center flex items-center">
+        <span className="text-[32px] font-header">Enjoy The Difference</span>
+        <span className="max-w-[650px] leading-6 text-xs text-neutral-500 font-light">
+          We offer customized bioactive treatments from our friendly and
+          knowledgeable staff. We specialize in Couple’s Treatments, Floatation
+          and all forms of massage as well as cutting edge facial treatments. We
+          aim to make you a better you!
+        </span>
+      </div>
+      <div className="p-4">
+        <Spec items={SPEC} />
+      </div>
+      <div className="p-4">
+        <Features items={FEATURES} />
+      </div>
+      <div className="p-4 text-center">
+        <Logo />
+      </div>
+      <div className="p-4">
+        <Locations items={LOCATIONS} />
+      </div>
+      <div className="py-4 mt-24">{/* <Timeline items={TIMELINE} /> */}</div>
+      <div className="py-4 mt-24">
+        <Enquiry items={INFORMATION} />
+      </div>
+      <div className="p-4 mt-24">
+        <SpaTeam items={SPA_TEAM} />
+      </div>
+      <div className="flex flex-col gap-4 text-center p-4 mt-24">
+        <span className="text-[48px] font-light font-header text-neutral-600">
+          Welcome to Rela.
+          <br />
+          Book Your Stay Today.
+        </span>
+        <span className="my-8 mb-24">
+          <span className="tracking-[0.3rem] text-xs hover:text-primary font-light">
+            BOOK AN APPOINTMENT
+          </span>
+        </span>
+      </div>
+    </div>
   )
 }

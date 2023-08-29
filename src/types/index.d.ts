@@ -10,3 +10,13 @@ declare module '*.svg' {
   const src: string
   export default src
 }
+
+export type SiteConfig = {
+  name: string
+  description: string
+  url: string
+  ogImage: string
+  links: {
+    twitter: string
+  }
+}

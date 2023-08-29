@@ -1,6 +1,7 @@
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import '../styles/index.css'
+import { siteConfig } from 'config/site'
 
 export const metadata = {
   authors: [
@@ -10,6 +11,13 @@ export const metadata = {
   ],
   creator: 'kienmai',
   title: 'Home | Acne Huong',
+  description: siteConfig.description,
+  keywords: ['Acnehuong'],
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
