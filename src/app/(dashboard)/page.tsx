@@ -229,7 +229,7 @@ const SPA_TEAM: EmployeeType[] = [
 
 export default function Page() {
   return (
-    <div className="relative bg-[#fff8f5] min-h-screen h-full flex flex-col">
+    <div className="relative bg-light min-h-screen h-full flex flex-col">
       <Carousel />
       <div className="h-[400px]" />
       <div className="absolute top-[460px] flex justify-center items-center w-full z-50">

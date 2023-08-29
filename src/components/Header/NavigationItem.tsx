@@ -12,11 +12,12 @@ export default function NavigationItem({ href, label }: Props) {
 
   return (
     <div
-      className="text-sm hover:text-primary flex items-center gap-2"
+      className="text-sm text-primary flex items-center gap-2"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
       {isHovering && <MoveRightIcon fill="#f59b90" />}
+
       <Link className="uppercase" href={href}>
         {label}
       </Link>

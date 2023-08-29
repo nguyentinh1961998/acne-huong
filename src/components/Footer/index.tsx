@@ -8,9 +8,9 @@ import {
 import Navigation from './Navigation'
 import Logo from '../common/Logo'
 
-export default function Footer() {
+export function Footer() {
   return (
-    <div className="bg-active pt-20 pb-32 px-36 flex justify-between">
+    <div className="bg-primary pt-20 pb-32 px-36 flex justify-between">
       <div className="flex flex-col gap-4 text-white text-xl">
         <div className="flex items-center gap-3 mb-2">
           <Logo isFooter />

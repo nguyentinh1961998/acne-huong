@@ -10,6 +10,14 @@ require('dotenv').config()
  **/
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+  },
   env: {
     BASE_URL: process.env.BASE_URL,
   },

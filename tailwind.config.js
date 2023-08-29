@@ -26,12 +26,10 @@ module.exports = {
     extend: {
       colors: {
         active: '#a87e72',
-        primary: '#f59b90',
-        light: '#feefec',
+        dark: '#454b44',
+        primary: '#558657',
+        light: '#e6fce9',
         lighter: '#fff8f5',
-      },
-      fontFamily: {
-        header: ['old standard tt', '"Open Sans"'],
       },
     },
   },

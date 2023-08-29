@@ -23,7 +23,7 @@ export default function Carousel() {
 
   return (
     <div className="z-1 relative">
-      <div className="z-50 absolute w-full flex items-center justify-center left-0 bottom-0">
+      <div className="z-50 absolute w-full flex items-center justify-center left-0 bottom-0 overflow-hidden">
         <Wave className="min-w-[calc(100%+143px)]" />
       </div>
 
@@ -41,6 +41,7 @@ export default function Carousel() {
           ref.current?.slickNext()
         }}
       />
+
       <Slider ref={ref} className="h-full" {...settings}>
         <div className="relative w-screen h-[672px]">
           <div className="flex items-center absolute justify-center w-full h-full z-40">
@@ -76,6 +77,7 @@ export default function Carousel() {
             description="Description & DescriptionDescriptionDescription"
           />
         </div>
+
         <div className="relative w-screen h-[672px]">
           <div className="flex items-center absolute justify-center w-full h-full z-40">
             <CarouselLabel

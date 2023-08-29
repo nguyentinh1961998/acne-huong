@@ -1,3 +1,6 @@
+import { Heading } from 'components/Heading'
+import { Text } from 'components/Text'
+
 interface EmployeeCardProps {
   role?: string
   name?: string
@@ -27,8 +30,10 @@ export default function EmployeeCard({
         alt="avatar"
       />
       <span className="px-4 py-8 flex flex-col bg-white text-center">
-        <span className="text-xl font-header">{name}</span>
-        <span className="text-sm text-active">{role}</span>
+        <Heading as="h4" className="text-xl font-header">
+          {name}
+        </Heading>
+        <Text className="text-sm text-dark">{role}</Text>
       </span>
     </div>
   )

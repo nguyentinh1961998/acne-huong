@@ -21,7 +21,7 @@ export default function ServiceCard({
     <span
       className={`p-6 max-w-[380px] min-h-[480px] flex flex-col justify-center items-center gap-8 shadow-xl bg-white ${className}`}
     >
-      <div className="w-36 h-36 flex items-center justify-center rounded-full bg-[#feefec] p-2">
+      <div className="w-36 h-36 flex items-center justify-center rounded-full bg-light p-2">
         {icon}
       </div>
       <div className="text-xl font-light font-header">{title}</div>

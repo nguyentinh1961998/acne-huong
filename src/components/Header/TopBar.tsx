@@ -1,30 +1,34 @@
+import { Box } from 'components/Box'
+import { Text } from 'components/Text'
+import { listContact } from 'config/contact'
 import {
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
-  MailIcon,
-  PhoneIcon,
   SearchIcon,
   TwitterIcon,
   YoutubeIcon,
 } from 'lucide-react'
+import Link from 'next/link'
 
 export default function TopBar() {
   return (
     <div className="flex items-center justify-between gap-4 p-4 px-6 border-b border-neutral-200">
       <div className="flex items-center gap-4">
-        <span className="bg-active w-5 h-5 rounded-full flex items-center justify-center text-white">
-          <PhoneIcon size={12} />
-        </span>
-        <span className="text-neutral-500 hover:text-primary cursor-pointer font-light text-sm mr-2">
-          +0936635536
-        </span>
-        <span className="bg-active w-5 h-5 rounded-full flex items-center justify-center text-white">
-          <MailIcon size={12} />
-        </span>
-        <span className="text-neutral-500 hover:text-primary cursor-pointer font-light text-sm">
-          email@gmail.com
-        </span>
+        {listContact.contacts.map((contact, index) => (
+          <Box key={index} className="flex gap-x-2 items-center cursor-pointer">
+            <Box className="bg-primary h-8 w-8 flex items-center justify-center rounded-full text-white">
+              {contact.icon}
+            </Box>
+
+            <Link
+              href={contact.href || ''}
+              className="text-dark hover:text-primary cursor-pointer font-light text-sm mr-2"
+            >
+              <Text as="b">{contact.label}</Text>
+            </Link>
+          </Box>
+        ))}
       </div>
       <div className="flex items-center gap-8">
         <SearchIcon

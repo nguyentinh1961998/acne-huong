@@ -2,6 +2,14 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import '../styles/index.css'
 import { siteConfig } from 'config/site'
+import { Old_Standard_TT } from 'next/font/google'
+import { cn } from 'libs'
+
+const oldStandardTT = Old_Standard_TT({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   authors: [
@@ -27,11 +35,13 @@ export default function RootLayout({
 }) {
   return (
     <html
-      className="bg-neutral-100 font-sans text-slate-800 antialiased"
+      className={cn(
+        'bg-light text-slate-800 antialiased',
+        oldStandardTT.className,
+      )}
       lang="en"
     >
       <head />
-
       <body className="min-h-screen">{children}</body>
     </html>
   )
