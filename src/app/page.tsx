@@ -1,20 +1,20 @@
 /* eslint-disable import/extensions */
 import { Layout } from 'components/Layout'
 import Image from 'next/image'
-import Carousel from '@/components/Dashboard/Carousel'
-import Services from '@/components/Dashboard/Services'
-import { ServiceCardItem } from '@/components/Dashboard/Services/ServiceCard'
-import Logo from '@/components/common/Logo'
-import Spec from '@/components/Spec'
-import { SpecCardItem } from '@/components/Spec/SpecCard'
-import Features from '@/components/Dashboard/Features'
-import { FeatureItemType } from '@/components/Dashboard/Features/FeatureItem'
-import Locations from '@/components/Dashboard/Locations'
-import { LocationItemType } from '@/components/Dashboard/Locations/LocationItem'
-import Enquiry from '@/components/Dashboard/Enquiry'
-import { InformationItemType } from '@/components/Dashboard/Enquiry/InformationItem'
-import SpaTeam from '@/components/Dashboard/SpaTeam'
-import { EmployeeType } from '@/components/Dashboard/SpaTeam/EmployeeCard'
+import Carousel from 'components/Dashboard/Carousel'
+import Services from 'components/Dashboard/Services'
+import { ServiceCardItem } from 'components/Dashboard/Services/ServiceCard'
+import Logo from 'components/common/Logo'
+import Spec from 'components/Spec'
+import { SpecCardItem } from 'components/Spec/SpecCard'
+import Features from 'components/Dashboard/Features'
+import { FeatureItemType } from 'components/Dashboard/Features/FeatureItem'
+import Locations from 'components/Dashboard/Locations'
+import { LocationItemType } from 'components/Dashboard/Locations/LocationItem'
+import Enquiry from 'components/Dashboard/Enquiry'
+import { InformationItemType } from 'components/Dashboard/Enquiry/InformationItem'
+import SpaTeam from 'components/Dashboard/SpaTeam'
+import { EmployeeType } from 'components/Dashboard/SpaTeam/EmployeeCard'
 
 const SERVICES: ServiceCardItem[] = [
   {
@@ -227,7 +227,7 @@ const SPA_TEAM: EmployeeType[] = [
 //   },
 // ]
 
-const DashboardPage = () => {
+export default function Page() {
   return (
     <Layout>
       <div className="relative bg-[#fff8f5] min-h-screen h-full flex flex-col">
@@ -283,5 +283,3 @@ const DashboardPage = () => {
     </Layout>
   )
 }
-
-export default DashboardPage

@@ -20,11 +20,13 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "baseUrl": "./src/",
     "incremental": true,
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "baseUrl": "./src/",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -33,7 +35,8 @@
     "**.config.js",
     "scripts/**/*.js",
     "./jest.setup.js",
-    "./cypress/tests/*.ts"
+    "./cypress/tests/*.ts",
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules", "**/*.test.ts", "**/*.cy.ts"]
 }

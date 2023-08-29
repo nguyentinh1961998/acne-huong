@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/extensions
-import { Input, InputProps } from '@/components/ui/input'
+import { Input, InputProps } from 'components/ui/input'
 
 function StyledInput(props: InputProps) {
   const { className, ...rest } = props

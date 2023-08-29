@@ -16,6 +16,7 @@
     "createDefaultProgram": true
   },
   "rules": {},
+
   "overrides": [
     {
       "files": ["**/*.ts?(x)", "**/*.js?(x)"],

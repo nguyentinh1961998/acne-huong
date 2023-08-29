@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-boilerplate",
-  "version": "1.1.0",
+  "name": "acne-huong",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next",
     "build": "next build",

@@ -1,3 +1,5 @@
+'use client'
+
 import { MoveLeftIcon, MoveRightIcon } from 'lucide-react'
 import Image from 'next/legacy/image'
 import { useRef } from 'react'

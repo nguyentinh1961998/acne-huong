@@ -9,6 +9,7 @@ require('dotenv').config()
  * @type {import('next').NextConfig}
  **/
 module.exports = withBundleAnalyzer({
+  reactStrictMode: true,
   env: {
     BASE_URL: process.env.BASE_URL,
   },

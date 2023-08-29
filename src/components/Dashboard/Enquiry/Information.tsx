@@ -1,3 +1,5 @@
+'use client'
+
 import Slider, { Settings } from 'react-slick'
 import {
   ArrowLeftIcon,
