@@ -25,54 +25,44 @@ export const docsConfig: DocsConfig = {
       title: 'Our Spa',
       navItems: [
         {
-          href: '',
+          href: 'our-spa',
           title: 'Our Spa',
         },
         {
-          href: '',
+          href: 'experts',
           title: 'Experts',
         },
         {
-          href: '',
+          href: 'experience',
           title: 'Experience',
+        },
+        {
+          href: 'location',
+          title: 'Location',
         },
       ],
     },
     {
-      href: 'Services',
+      href: 'services',
       title: 'Services',
       navItems: [
         {
-          href: '',
-          title: 'Our Spa',
+          href: 'acne-treatment',
+          title: 'Acne Treatment',
         },
         {
-          href: '',
-          title: 'Experts',
+          href: 'face-massages',
+          title: 'Face Massages',
         },
         {
-          href: '',
-          title: 'Experience',
+          href: 'skin-care',
+          title: 'Skincare',
         },
       ],
     },
     {
-      href: 'Reviews',
+      href: 'spa-review',
       title: 'Reviews',
-      navItems: [
-        {
-          href: '',
-          title: 'Our Spa',
-        },
-        {
-          href: '',
-          title: 'Experts',
-        },
-        {
-          href: '',
-          title: 'Experience',
-        },
-      ],
     },
     {
       href: 'Specials',

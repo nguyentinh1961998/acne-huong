@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants'
 
 const styles = tv({
-  base: 'text-base text-gray-900 leading-snug',
+  base: 'text-base leading-snug',
   variants: {
     size: {
       h1: 'text-5xl',

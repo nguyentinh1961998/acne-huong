@@ -7,10 +7,15 @@ export interface TextProps extends HTMLAttributes<HTMLElement> {
 }
 
 export function Text(props: TextProps) {
-  const { className = 'text-gray-900', truncate, as = 'p', ...rest } = props
+  const {
+    className = 'text-gray-900',
+    truncate = false,
+    as = 'p',
+    ...rest
+  } = props
 
   return createElement(as, {
-    className: cx(className, { truncate: true }),
+    className: cx(className, { truncate }),
     ...rest,
   })
 }

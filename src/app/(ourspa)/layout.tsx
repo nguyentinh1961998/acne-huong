@@ -13,13 +13,10 @@ export default function OurSpaLayout({
       <HeroSection
         image="/images/our-spa.jpg"
         title="An Incredible Spa Experience"
-        description=" Rela is a genuine oasis in the middle of the city that combines
-          relaxing water procedures, beauty and wellness services, and sports."
+        description="Acnehuong is a genuine salon in the middle of the city that combines relaxing skincare, beauty and treatment"
       />
 
-      <div className="mx-4 -mt-60 relative z-50 overflow-hidden">
-        {children}
-      </div>
+      <div className="-mt-[12%] relative z-50 overflow-hidden">{children}</div>
       <Footer />
     </>
   )

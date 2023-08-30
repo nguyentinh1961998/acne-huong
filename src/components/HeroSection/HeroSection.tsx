@@ -4,7 +4,7 @@ import Image from 'next/image'
 interface HeroSectionProps {
   image: string
   title: string
-  description: string
+  description?: string
 }
 
 export function HeroSection({ description, image, title }: HeroSectionProps) {
@@ -18,7 +18,7 @@ export function HeroSection({ description, image, title }: HeroSectionProps) {
         <Wave className="min-w-[calc(100%+143px)]" />
       </div>
 
-      <div className="flex flex-col items-center gap-y-4 z-20 justify-center w-full h-full absolute">
+      <div className="flex flex-col items-center gap-y-4 z-20 justify-center w-full h-full absolute -top-20">
         <h1 className="text-white text-6xl">{title}</h1>
         <p className="text-gray-400 max-w-2xl text-center">{description}</p>
       </div>

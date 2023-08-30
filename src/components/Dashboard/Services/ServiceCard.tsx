@@ -1,11 +1,12 @@
 import { MoveRightIcon } from 'lucide-react'
+import Link from 'next/link'
 
 interface ServiceCardProps {
   icon?: string | JSX.Element
   title?: string
   description?: string
-  onBtnClick?: () => void
   className?: string
+  href?: string
 }
 
 export type ServiceCardItem = ServiceCardProps & { id: string }
@@ -13,9 +14,9 @@ export type ServiceCardItem = ServiceCardProps & { id: string }
 export default function ServiceCard({
   description,
   icon,
-  onBtnClick,
   title,
   className,
+  href,
 }: ServiceCardProps) {
   return (
     <span
@@ -28,13 +29,13 @@ export default function ServiceCard({
       <div className="text-xs w-[70%] text-center text-neutral-400">
         {description}
       </div>
-      <button
-        className="flex text-[9px] font-light items-center gap-4"
-        onClick={onBtnClick}
+      <Link
+        href={href ?? '#'}
+        className="flex text-[9px] font-light items-center gap-4 hover:text-primary transition duration-300"
       >
         LEARN MORE
         <MoveRightIcon size={10} />
-      </button>
+      </Link>
     </span>
   )
 }
