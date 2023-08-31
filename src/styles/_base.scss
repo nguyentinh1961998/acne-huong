@@ -1,0 +1,67 @@
+@import '../styles/mixins';
+
+@font-face {
+  font-family: 'IvyMode';
+  src: local('IvyMode'), url('../public/fonts/IvyMode/SVN-IvyMode-Bold.otf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'IvyMode';
+  src: local('IvyMode'), url('../public/fonts/IvyMode/SVN-IvyMode-Regular.otf') format('truetype');
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: overlay;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+  -webkit-user-drag: none;
+  -ms-content-zooming: none;
+  font-family: var(--font-family);
+}
+
+.container {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 32px 16px;
+
+  @include smallDesktop {
+    max-width: $smallDesktop-width;
+  }
+
+  @include tablet {
+    max-width: $tablet-width;
+  }
+
+  @include phone {
+    max-width: $phone-width;
+  }
+
+  @include smallPhone {
+    max-width: $smallPhone-width;
+  }
+}
+
+.ant-layout {
+  width: 100%;
+  background: var(--main-bg);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.ant-layout-footer {
+  background-color: var(--footer-bg);
+}
+
+.ant-back-top {
+  z-index: 1000;
+}

@@ -111,20 +111,16 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      href: 'Features',
-      title: 'Features',
+      href: 'videos',
+      title: 'Videos',
       navItems: [
         {
-          href: '',
-          title: 'Our Spa',
+          href: 'trending-videos',
+          title: 'Trending Videos',
         },
         {
-          href: '',
-          title: 'Experts',
-        },
-        {
-          href: '',
-          title: 'Experience',
+          href: 'newest-videos',
+          title: 'Newest Videos',
         },
       ],
     },

@@ -4,7 +4,7 @@ import Image from 'next/image'
 interface HeroSectionProps {
   image: string
   title: string
-  description: string
+  description?: string
 }
 
 export function HeroSection({ description, image, title }: HeroSectionProps) {

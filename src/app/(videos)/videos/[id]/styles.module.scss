@@ -1,0 +1,175 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/variables';
+
+.video {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+
+  &__overlay {
+    inset: 0;
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      inset: 0;
+      content: '';
+      width: 100vw;
+      z-index: 1;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 12px;
+
+    @include smallDesktop {
+      flex-wrap: wrap;
+      gap: 0;
+      margin: 40px 0;
+    }
+  }
+  &__video {
+    width: 100%;
+    height: 360px;
+    border-radius: 6px;
+
+    @include phone {
+      height: fit-content;
+    }
+  }
+  &__section {
+    gap: 24px;
+    flex-wrap: nowrap;
+    @include phone {
+      flex-direction: column;
+      align-items: baseline;
+    }
+  }
+  &__content {
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    z-index: 2;
+    text-transform: capitalize;
+
+    @include phone {
+      font-size: 2rem;
+    }
+  }
+  &__thumbnail {
+    position: relative;
+    max-width: 250px;
+    min-height: 360px;
+
+    img {
+      border-radius: 6px;
+    }
+    @include phone {
+      width: 100%;
+    }
+  }
+  &__desc {
+    width: 100%;
+    margin-top: 2rem;
+    background: #fafafa85;
+    border-radius: 6px;
+    padding: 14px;
+    max-height: 150px;
+    overflow-y: scroll;
+  }
+  &__detail {
+    height: 100%;
+    width: 100%;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.625rem;
+      font-weight: 600;
+    }
+  }
+  &__comments {
+    font-weight: 500;
+    gap: 8px;
+
+    &__avatar {
+    }
+    &__name {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+    &__time {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    &__text {
+      border-radius: 8px;
+      border: 1px solid $yellow;
+      padding: 16px;
+      margin-top: 8px;
+    }
+    &__reply {
+      padding: 14px 0 0 0;
+      margin-top: 14px;
+      width: 100%;
+      border-top: 1px solid $yellow;
+      cursor: pointer;
+
+      p {
+        margin-left: 8px;
+        text-transform: capitalize;
+      }
+    }
+    &__user {
+    }
+    &__admin {
+      background: #f1f1f1;
+      padding: 16px;
+      margin-top: 8px;
+      border-radius: 8px;
+
+      > div {
+        margin: 0 0 8px;
+        text-transform: uppercase;
+        color: $black;
+      }
+    }
+  }
+  &__write {
+    border-radius: 8px;
+    border: 1px solid $yellow;
+    padding: 1rem;
+    margin-top: 2rem;
+
+    h4 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    :global(.ant-form-item:last-child) {
+      margin-bottom: 0;
+    }
+    :global(.ant-input) {
+      border-radius: 4px;
+    }
+    :global(.ant-input:hover) {
+      border-color: $yellow;
+    }
+    :global(.ant-input:focus) {
+      border-color: $yellow;
+      box-shadow: 0 0 0 2px rgba(255, 244, 201, 0.85);
+    }
+  }
+}
