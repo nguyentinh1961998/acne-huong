@@ -1,3 +1,4 @@
+import moment from 'moment'
 import request from '../request'
 
 export const getListApi = async (params) =>
@@ -36,4 +37,6 @@ export const deleteVideoApi = async (id) =>
     enableFlashMessageSuccess: true,
   })
 
-
+export const formatDate = (value, format = 'DD-MM-YYYY') => {
+  return moment(value).format(format)
+}
