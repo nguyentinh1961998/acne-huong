@@ -20,6 +20,7 @@ module.exports = {
         xmd: { max: '960px' },
         md: { max: '768px' },
         sm: { max: '576px' },
+        xsm: { max: '475px' },
         xs: { max: '375' },
       },
     },
