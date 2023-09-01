@@ -43,6 +43,11 @@ export default function RootLayout({
     >
       <head />
       <body className="min-h-screen">{children}</body>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2346085669058627"
+        crossOrigin="anonymous"
+      />
     </html>
   )
 }
