@@ -33,7 +33,7 @@ export function VideoListPage({
   )
 
   const handleCategoryClick = (categoryId: string) => {
-    setActiveCategory(categoryId === activeCategory ? null : categoryId)
+    setActiveCategory(categoryId)
   }
 
   const handleCategoryKeyPress = (
@@ -47,8 +47,8 @@ export function VideoListPage({
   }
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <p className="uppercase text-3xl font-sans font-bold tracking-wide mb-5">
+    <div className="mx-auto max-w-7xl">
+      <p className="mb-5 font-sans text-3xl font-bold tracking-wide uppercase">
         {title}
       </p>
       <div
@@ -57,22 +57,20 @@ export function VideoListPage({
           categories && 'mb-5',
         )}
       >
-        {categories?.map((category: any) => (
+        {categories?.map(({ _id, title }: any) => (
           <span
-            key={category.title}
+            key={_id}
             role="button"
             tabIndex={0}
-            onClick={() => handleCategoryClick(category.title)}
-            onKeyPress={(event) =>
-              handleCategoryKeyPress(event, category.title)
-            }
+            onClick={() => handleCategoryClick(_id)}
+            onKeyPress={(event) => handleCategoryKeyPress(event, title)}
             className={twMerge(
               'whitespace-nowrap font-sans text-lg px-1 py-1 cursor-pointer flex justify-center items-center',
-              category.title === activeCategory &&
+              title === activeCategory &&
                 'border-inherit border-b-4 border-b-solid border-b-red-500 transition duration-300 text-red-500 font-semibold',
             )}
           >
-            {category.title}
+            {title}
           </span>
         ))}
       </div>

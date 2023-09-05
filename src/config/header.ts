@@ -5,20 +5,6 @@ export const docsConfig: DocsConfig = {
     {
       href: '',
       title: 'Home',
-      navItems: [
-        {
-          href: '',
-          title: 'Home 1',
-        },
-        {
-          href: '',
-          title: 'Home 2',
-        },
-        {
-          href: '',
-          title: 'Home 2',
-        },
-      ],
     },
     {
       href: 'our-spa',
@@ -43,6 +29,20 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      href: 'videos',
+      title: 'Videos',
+      navItems: [
+        {
+          href: 'videos',
+          title: 'Trending Videos',
+        },
+        {
+          href: 'videos',
+          title: 'Newest Videos',
+        },
+      ],
+    },
+    {
       href: 'services',
       title: 'Services',
       navItems: [
@@ -63,56 +63,6 @@ export const docsConfig: DocsConfig = {
     {
       href: 'spa-review',
       title: 'Reviews',
-    },
-    {
-      href: 'Specials',
-      title: 'Specials',
-      navItems: [
-        {
-          href: '',
-          title: 'Our Spa',
-        },
-        {
-          href: '',
-          title: 'Experts',
-        },
-        {
-          href: '',
-          title: 'Experience',
-        },
-      ],
-    },
-    {
-      href: 'News',
-      title: 'News',
-      navItems: [
-        {
-          href: '',
-          title: 'Our Spa',
-        },
-        {
-          href: '',
-          title: 'Experts',
-        },
-        {
-          href: '',
-          title: 'Experience',
-        },
-      ],
-    },
-    {
-      href: 'videos',
-      title: 'Videos',
-      navItems: [
-        {
-          href: 'trending-videos',
-          title: 'Trending Videos',
-        },
-        {
-          href: 'newest-videos',
-          title: 'Newest Videos',
-        },
-      ],
     },
   ],
 }
